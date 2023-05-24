@@ -17,6 +17,7 @@
 		876CDBD32A1DBD8200FC3AEA /* My_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBD22A1DBD8200FC3AEA /* My_AppTests.m */; };
 		876CDBDD2A1DBD8200FC3AEA /* My_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBDC2A1DBD8200FC3AEA /* My_AppUITests.m */; };
 		876CDBDF2A1DBD8200FC3AEA /* My_AppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBDE2A1DBD8200FC3AEA /* My_AppUITestsLaunchTests.m */; };
+		876CDBEE2A1DC20F00FC3AEA /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBED2A1DC20F00FC3AEA /* MyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		876CDBD82A1DBD8200FC3AEA /* My AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		876CDBDC2A1DBD8200FC3AEA /* My_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_AppUITests.m; sourceTree = "<group>"; };
 		876CDBDE2A1DBD8200FC3AEA /* My_AppUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_AppUITestsLaunchTests.m; sourceTree = "<group>"; };
+		876CDBEB2A1DBF3D00FC3AEA /* MyAppListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppListener.h; sourceTree = "<group>"; };
+		876CDBEC2A1DC0CE00FC3AEA /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		876CDBED2A1DC20F00FC3AEA /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,9 @@
 				876CDBBA2A1DBD8000FC3AEA /* SceneDelegate.m */,
 				876CDBBC2A1DBD8000FC3AEA /* ViewController.h */,
 				876CDBBD2A1DBD8000FC3AEA /* ViewController.m */,
+				876CDBEC2A1DC0CE00FC3AEA /* MyClass.h */,
+				876CDBED2A1DC20F00FC3AEA /* MyClass.m */,
+				876CDBEB2A1DBF3D00FC3AEA /* MyAppListener.h */,
 				876CDBBF2A1DBD8000FC3AEA /* Main.storyboard */,
 				876CDBC22A1DBD8200FC3AEA /* Assets.xcassets */,
 				876CDBC42A1DBD8200FC3AEA /* LaunchScreen.storyboard */,
@@ -268,6 +275,7 @@
 			files = (
 				876CDBBE2A1DBD8000FC3AEA /* ViewController.m in Sources */,
 				876CDBB82A1DBD8000FC3AEA /* AppDelegate.m in Sources */,
+				876CDBEE2A1DC20F00FC3AEA /* MyClass.m in Sources */,
 				876CDBC92A1DBD8200FC3AEA /* main.m in Sources */,
 				876CDBBB2A1DBD8000FC3AEA /* SceneDelegate.m in Sources */,
 			);
