@@ -18,6 +18,7 @@
 		876CDBDD2A1DBD8200FC3AEA /* My_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBDC2A1DBD8200FC3AEA /* My_AppUITests.m */; };
 		876CDBDF2A1DBD8200FC3AEA /* My_AppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBDE2A1DBD8200FC3AEA /* My_AppUITestsLaunchTests.m */; };
 		876CDBEE2A1DC20F00FC3AEA /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBED2A1DC20F00FC3AEA /* MyClass.m */; };
+		876CDBF32A1EFA5700FC3AEA /* BandNamesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CDBF22A1EFA5700FC3AEA /* BandNamesController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		876CDBEB2A1DBF3D00FC3AEA /* MyAppListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppListener.h; sourceTree = "<group>"; };
 		876CDBEC2A1DC0CE00FC3AEA /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
 		876CDBED2A1DC20F00FC3AEA /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		876CDBF12A1EFA5700FC3AEA /* BandNamesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BandNamesController.h; sourceTree = "<group>"; };
+		876CDBF22A1EFA5700FC3AEA /* BandNamesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BandNamesController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +115,7 @@
 				876CDBB72A1DBD8000FC3AEA /* AppDelegate.m */,
 				876CDBB92A1DBD8000FC3AEA /* SceneDelegate.h */,
 				876CDBBA2A1DBD8000FC3AEA /* SceneDelegate.m */,
-				876CDBBC2A1DBD8000FC3AEA /* ViewController.h */,
-				876CDBBD2A1DBD8000FC3AEA /* ViewController.m */,
+				876CDBF02A1E280000FC3AEA /* Controllers */,
 				876CDBEC2A1DC0CE00FC3AEA /* MyClass.h */,
 				876CDBED2A1DC20F00FC3AEA /* MyClass.m */,
 				876CDBEB2A1DBF3D00FC3AEA /* MyAppListener.h */,
@@ -141,6 +143,17 @@
 				876CDBDE2A1DBD8200FC3AEA /* My_AppUITestsLaunchTests.m */,
 			);
 			path = "My AppUITests";
+			sourceTree = "<group>";
+		};
+		876CDBF02A1E280000FC3AEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				876CDBBC2A1DBD8000FC3AEA /* ViewController.h */,
+				876CDBBD2A1DBD8000FC3AEA /* ViewController.m */,
+				876CDBF12A1EFA5700FC3AEA /* BandNamesController.h */,
+				876CDBF22A1EFA5700FC3AEA /* BandNamesController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				876CDBBE2A1DBD8000FC3AEA /* ViewController.m in Sources */,
+				876CDBF32A1EFA5700FC3AEA /* BandNamesController.m in Sources */,
 				876CDBB82A1DBD8000FC3AEA /* AppDelegate.m in Sources */,
 				876CDBEE2A1DC20F00FC3AEA /* MyClass.m in Sources */,
 				876CDBC92A1DBD8200FC3AEA /* main.m in Sources */,

@@ -2,8 +2,6 @@
 //  MyClass.m
 //  My App
 //
-//  Created by Masters Team on 24/05/23.
-//
 
 #import <Foundation/Foundation.h>
 #import "MyClass.h"
@@ -18,7 +16,7 @@
 - (instancetype)initWithMyAppListener:(id<MyAppListener>)myAppListener {
     if(self = [super init]) {
         _myAppListener = myAppListener; 
-        [self Go]; // Calls the Go function
+        [self Go]; 
     }
     return self;
 }
