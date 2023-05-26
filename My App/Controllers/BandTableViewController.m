@@ -8,25 +8,23 @@
  TODO: Separate view controller (modal?) that handles entering new data.
  */
 
-#import "ViewController.h"
+#import "BandTableViewController.h"
 #import "BandNamesController.h"
 
-// Once another protocol is added to an interface
-@interface ViewController ()
+// TODO: Refactor ViewController to BandTableViewController
+@interface ViewController () <BandNamesControllerDelegate>
 
 @end
 
-// Imeplementation is the implementation of a class
-@implementation ViewController
-{
-    
+// TODO: Refactor ViewController to BandTableViewController
+@implementation ViewController {
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Instantiate the array of band names
-    self.tableBandNamesArray = [NSMutableArray array];
+    self.tableBandNamesArray = [[NSMutableArray alloc] init];
     
     // Create the nav bar
     UINavigationBar* navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 55)];
@@ -47,7 +45,7 @@
     [navBar setItems:@[navItem]];
     
     // Create the '+' nav button
-    UIBarButtonItem* navButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBandNameTapped)];
+    UIBarButtonItem* navButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBandNameTapped:)];
     
     navItem.rightBarButtonItem = navButton;
         
@@ -59,24 +57,19 @@
 }
 
 // Nav bar button click
-- (void)addBandNameTapped
+- (void)addBandNameTapped:(id)sender
 {
-    BandNamesController* bandNamesController = [[BandNamesController alloc] init];
+    BandNamesController *addBandVC = [[BandNamesController alloc] init];
+   addBandVC.delegate = self;
     
-    bandNamesController.completionBlock = ^(NSString* newBand)
-    {
-        if(newBand)
-        {
-            [self.tableBandNamesArray addObject:newBand];
-            
-            NSIndexPath* path = [NSIndexPath indexPathForRow:self.tableBandNamesArray.count-1 inSection:0];
-            [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationAutomatic];
-        }
-        
-        [self dismissViewControllerAnimated:YES completion:nil];
-    };
+   UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:addBandVC];
     
-    [self presentViewController:bandNamesController animated:YES completion:nil];
+   [self presentViewController:navController animated:YES completion:nil];
+}
+
+- (void)bandNameControllerDidSaveItem:(nonnull NSString *)item {
+    [self.tableBandNamesArray addObject:item];
+    [self.tableView reloadData];
 }
 
 /*--- BEGIN TABLE VIEW METHODS ---*/
@@ -96,4 +89,5 @@
     return self.tableBandNamesArray.count;
 }
 /*--- END TABLE VIEW METHODS ---*/
+
 @end
